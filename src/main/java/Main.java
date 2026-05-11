@@ -1,8 +1,9 @@
+import controller.InventarioController;
+
 public class Main {
 
     public static void main(String[] args) {
-
-        view.VentanaInventario ventana = new view.VentanaInventario();
-        ventana.setVisible(true);
+        controller.InventarioController controlador = new controller.InventarioController();
+        controlador.iniciarPrograma();
     }
 }
