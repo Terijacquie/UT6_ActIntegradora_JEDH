@@ -9,6 +9,7 @@ public class VentanaInventario extends JFrame {
     public JTextField txtPrecio = new JTextField();
     public JComboBox<model.Secciones> comboSeccion = new JComboBox<>();
     public JButton btnActualizar = new JButton("Actualizar");
+    public JButton btnBuscar = new JButton("Buscar");
     public JButton btnEliminar = new JButton("Eliminar");
     public JButton btnGuardar = new JButton("Guardar en Inventario");
     public JButton btnLimpiar = new JButton("Limpiar");
@@ -43,6 +44,7 @@ public class VentanaInventario extends JFrame {
         panelBotones.add(btnActualizar);
         panelBotones.add(btnEliminar);
         panelBotones.add(btnLimpiar);
+        panelBotones.add(btnBuscar);
 
         // Unimos lo paneles
         JPanel panelNorte = new JPanel(new BorderLayout());

@@ -9,13 +9,13 @@ public class Producto {
     private String nombre;
     private int stock;
     private double precio;
-    private int id_seccion; // Aquí dirá si pertenece a la sección de pizzería, fuego, ensaladas o postres.
+    private String seccion;
 
-    public Producto(int id, String nombre, double precio, int id_seccion, int stock) {
+    public Producto(int id, String nombre, int stock, double precio, String seccion) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
-        this.id_seccion = id_seccion;
+        this.seccion = seccion;
         this.stock = stock;
     }
 
@@ -43,6 +43,13 @@ public class Producto {
         this.precio = precio;
     }
 
+    public String getSeccion() {
+        return seccion;
+    }
+
+    public void setSeccion(String seccion) {
+        this.seccion = seccion;
+    }
 
     public int getStock() {
         return stock;
@@ -52,14 +59,6 @@ public class Producto {
         this.stock = stock;
     }
 
-    public int getId_seccion() {
-        return id_seccion;
-    }
-
-    public void setId_seccion(int id_seccion) {
-        this.id_seccion = id_seccion;
-    }
-
     @Override
     public String toString() {
         return "Producto{" +
@@ -67,7 +66,7 @@ public class Producto {
                 ", nombre='" + nombre + '\'' +
                 ", stock=" + stock +
                 ", precio=" + precio +
-                ", id_seccion=" + id_seccion +
+                ", seccion='" + seccion + '\'' +
                 '}';
     }
 }
